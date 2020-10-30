@@ -36,27 +36,4 @@ namespace Sprint01.Task_4
             Dispose(false);
         }
     }
-
-    /*private bool disposed = false;
-    ~DisposePatternImplementer()
-    {
-        Console.WriteLine("Disposing by GC");
-    }
-    public void Dispose()
-    {
-        Dispose(true);
-        Console.WriteLine("Disposing by developer");
-        GC.SuppressFinalize(this);
-    }
-    protected virtual void Dispose(bool disposing)
-    {
-        if (!disposed)
-        {
-            if (disposing)
-            {
-
-            }
-            disposed = true;
-        }
-    }*/
 }

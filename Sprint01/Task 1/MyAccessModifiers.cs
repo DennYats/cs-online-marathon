@@ -33,7 +33,7 @@ namespace Sprint01.Task_1
             MyAccessModifiers mam = (MyAccessModifiers)obj;
             return (this.Age == mam.Age && this.Name == mam.Name && this.personalInfo == mam.personalInfo);
         }
-        //Знайти як реалізувати метод GetHashCode
+
         public override int GetHashCode() => base.GetHashCode();
 
         public static bool operator ==(MyAccessModifiers first, MyAccessModifiers second) =>
