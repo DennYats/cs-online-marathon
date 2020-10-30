@@ -38,10 +38,10 @@ namespace Sprint01.Task_1
         //Знайти як реалізувати метод GetHashCode
         public override int GetHashCode() => base.GetHashCode();
 
-        public static bool operator == (MyAccessModifiers first, MyAccessModifiers second) =>
+        public static bool operator ==(MyAccessModifiers first, MyAccessModifiers second) =>
             first.Equals(second);
 
-        public static bool operator != (MyAccessModifiers first, MyAccessModifiers second) =>
+        public static bool operator !=(MyAccessModifiers first, MyAccessModifiers second) =>
             !first.Equals(second);
     }
 }
