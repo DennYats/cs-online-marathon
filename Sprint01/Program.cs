@@ -1,6 +1,4 @@
-﻿using System;
-
-using static System.Console;
+﻿using static System.Console;
 
 namespace Sprint01
 {
@@ -8,7 +6,7 @@ namespace Sprint01
     {
         static void Main(string[] args)
         {
-            WriteLine("Hello marathon");
+            WriteLine("Sprint 1");
         }
     }
 }

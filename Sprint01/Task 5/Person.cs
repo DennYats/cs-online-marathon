@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Sprint01.Task_5
+﻿namespace Sprint01.Task_5
 {
     public class Person
     {
