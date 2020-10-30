@@ -1,5 +1,4 @@
-﻿using Sprint01.Task_2;
-using System;
+﻿using System;
 
 using static System.Console;
 
