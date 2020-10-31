@@ -4,10 +4,6 @@ namespace Sprint01.Task_4
 {
     public class DisposePatternImplementer : CloseableResource, IDisposable
     {
-        public void Close()
-        {
-            Console.WriteLine("Closing resource");
-        }
         private bool disposed = false;
         
         public void Dispose()
