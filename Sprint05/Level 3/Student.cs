@@ -16,9 +16,6 @@ namespace Sprint05.Level_3
             this.Name = Name;
         }
 
-        public static void Count() { }
-
-
         public static HashSet<Student> GetCommonStudents(List<Student> list1, List<Student> list2)
         {
             HashSet<Student> h1 = new HashSet<Student>(list1);
