@@ -25,15 +25,7 @@ namespace Sprint06
             {
                 kidsToKick = countOfChildren < children.Count ? countOfChildren : children.Count;
             }
-            /*for (int i = 0; i < kidsToKick; i++)
-            {
-                for(int j = 0; j < children.Count(); i++)
-                {
-                    if (i % syllables == 1)
-                        yield return children.ElementAt(i).ToString();
-                    if (i >= children.Count()) yield break;
-                }
-            }*/
+            
             int index = 0;
             while(kidsToKick > 0)
             {
