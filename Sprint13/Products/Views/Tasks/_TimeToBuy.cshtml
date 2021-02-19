@@ -1,0 +1,4 @@
+﻿@inject Products.Services.ITimeService TimeToBuy
+
+<h4>It's time to shopping!</h4>
+@TimeToBuy.GetTimeForTomorrow().ToString("dd.MM.yyyy")

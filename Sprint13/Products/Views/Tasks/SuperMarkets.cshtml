@@ -1,0 +1,7 @@
+﻿<h2>Our Supermarkets</h2>
+<h4>There are @ViewBag.Markets.Count markets:</h4>
+
+@foreach (var m in ViewBag.Markets)
+{
+    <p>@m</p>
+}

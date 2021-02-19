@@ -1,0 +1,28 @@
+﻿@{
+    List<Product> listOfProduct = new List<Product>();
+    listOfProduct.Add(new Product() { Name = "Bread", Price = 10 });
+    listOfProduct.Add(new Product() { Name = "Milk", Price = 11 });
+    listOfProduct.Add(new Product() { Name = "Cheese", Price = 140 });
+    listOfProduct.Add(new Product() { Name = "Sausage", Price = 110 });
+    listOfProduct.Add(new Product() { Name = "Potato", Price = 7 });
+    listOfProduct.Add(new Product() { Name = "Banana", Price = 23 });
+    listOfProduct.Add(new Product() { Name = "Tomato", Price = 23 });
+    listOfProduct.Add(new Product() { Name = "Candy", Price = 75 });
+}
+
+
+<h2>Information about product</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var item in listOfProduct)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+        </tr>
+    }
+</table>

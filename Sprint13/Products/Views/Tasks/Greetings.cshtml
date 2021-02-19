@@ -1,0 +1,39 @@
+﻿@{
+    string myMessage = "Hello C# Marathon!";
+    string welcome = "Welcome to our project!";
+}
+
+<h2>Greetings</h2>
+
+<p>The value of myMessage is: @myMessage</p>
+
+<p>The greeting is: @welcome</p>
+
+<p>Here in Ukraine: @ViewBag.Date.DayOfWeek</p>
+
+<p>We wish you: @ViewBag.Greeting!</p>
+
+<p>Today is @ViewBag.Date.DayOfWeek</p>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Day</td>
+        <td>@ViewBag.Date.Day</td>
+    </tr>
+    <tr>
+        <td>Hour</td>
+        <td>@ViewBag.Date.Hour</td>
+    </tr>
+    <tr>
+        <td>Minute</td>
+        <td>@ViewBag.Date.Minute</td>
+    </tr>
+    <tr>
+        <td>Second</td>
+        <td>@ViewBag.Date.Second</td>
+    </tr>
+</table>

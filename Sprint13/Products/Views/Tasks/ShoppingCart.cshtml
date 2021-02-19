@@ -1,0 +1,34 @@
+﻿@using (Html.BeginForm(FormMethod.Post))
+{
+    <label>Input your fullname:</label>
+    <br>
+    @Html.TextBox("fullname")
+    <br>
+
+    <label>Input your address:</label>
+    <br>
+    @Html.TextBox("address")
+    <br>
+    <br>
+
+    @Html.DropDownList("Markets", new SelectList(ViewBag.Markets))
+    <br>
+    <br>
+
+    @Html.RadioButton("date", "today")
+    <span>@DateTime.Today.ToString("dd MMMM yyyy HH:mm")</span>
+    <br>
+    @Html.RadioButton("date", "tomorrow")
+    <span>@DateTime.Today.AddDays(1).ToString("dd MMMM yyyy HH:mm")</span>
+    <br>
+    @Html.RadioButton("date", "in 2 days")
+    <span>@DateTime.Today.AddDays(2).ToString("dd MMMM yyyy HH:mm")</span>
+    <br>
+    <br>
+
+    @Html.ListBox("Products", new MultiSelectList(ViewBag.Products))
+    <br>
+    <br>
+
+    <input type="submit" value="Send">
+}
