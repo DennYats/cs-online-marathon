@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about building Authentication and Authorization Web apps with ASP.NET Core on our <a href="https://github.com/C-online-marathon/task-authentication-authorization-denys-yatsuliak-yaroslav-sukhopar">GitHub repository</a>.</p>
+    <h2>Only authenticated users can see this page</h2>
+</div>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>@User.Identity.Name</p>
+
+    <form method="post" asp-controller="Account" asp-action="Logout">
+        <input type="submit" value="Sign out" />
+    </form>
+}
+else
+{
+    <a asp-controller="Account" asp-action="Login">Sign in</a>
+    <a asp-controller="Account" asp-action="Register">Sign up</a>
+}
